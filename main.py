@@ -4,13 +4,13 @@ from keras.layers import Dense, Dropout, Flatten, BatchNormalization, Activation
 from keras.constraints import maxnorm
 from keras.layers.convolutional import Conv2D, MaxPooling2D
 from keras.utils import np_utils
-# from keras.datasets import cifar10
+from keras.datasets import cifar10
 
 # fix random seed for reproducibility
 seed = 21
 numpy.random.seed(seed)
 
-load data
+# load data
 (X_train, y_train), (X_test, y_test) = cifar10.load_data()
 
 # normalize inputs from 0-255 to 0.0-1.0
